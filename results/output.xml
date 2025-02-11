@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.9 on win32)" generated="2025-02-11T11:11:20.579786" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot framwork" source="d:\Code101\Robot_framwork">
+<suite id="s1-s1" name="TestCases" source="d:\Code101\Robot_framwork\TestCases">
+<suite id="s1-s1-s1" name="Lab01" source="d:\Code101\Robot_framwork\TestCases\Lab01.robot">
+<kw name="Open Browser" owner="Selenium2Library" type="SETUP">
+<msg time="2025-02-11T11:11:21.194652" level="INFO">Opening browser 'gc' to base url 'https://automationexercise.com/'.</msg>
+<arg>https://automationexercise.com/</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-11T11:11:21.191917" elapsed="8.280131"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Place Order Register Before Checkout" line="76">
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-11T11:11:29.475783" elapsed="0.143637"/>
+</kw>
+<kw name="Click Signup/Login Button">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:29.623134" level="INFO">Clicking element '//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a'.</msg>
+<arg>//*[@id="header"]/div/div/div/div[2]/div/ul/li[4]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:29.621076" elapsed="1.107408"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:11:29.619420" elapsed="1.109064"/>
+</kw>
+<kw name="Input Name">
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:30.741103" level="INFO">Typing text 'Aphinan' into text field '//*[@id="form"]/div/div/div[3]/div/form/input[2]'.</msg>
+<arg>//*[@id="form"]/div/div/div[3]/div/form/input[2]</arg>
+<arg>${name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:30.741103" elapsed="0.500874"/>
+</kw>
+<arg>name=${name}</arg>
+<status status="PASS" start="2025-02-11T11:11:30.739083" elapsed="0.502894"/>
+</kw>
+<kw name="Input email">
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:31.241977" level="INFO">Typing text 'aphinan6504@gmail.com' into text field '//*[@id="form"]/div/div/div[3]/div/form/input[3]'.</msg>
+<arg>//*[@id="form"]/div/div/div[3]/div/form/input[3]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:31.241977" elapsed="0.557272"/>
+</kw>
+<arg>email=${email}</arg>
+<status status="PASS" start="2025-02-11T11:11:31.241977" elapsed="0.557272"/>
+</kw>
+<kw name="Click Signup Button">
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:31.801260" level="INFO">Clicking button '//*[@id="form"]/div/div/div[3]/div/form/button'.</msg>
+<arg>//*[@id="form"]/div/div/div[3]/div/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:31.801260" elapsed="2.605396"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:11:31.801260" elapsed="2.605396"/>
+</kw>
+<kw name="Execute Javascript" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:34.407936" level="INFO">Executing JavaScript:
+document.body.style.zoom="30%"
+Without any arguments.</msg>
+<arg>document.body.style.zoom="30%"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-11T11:11:34.406656" elapsed="0.011855"/>
+</kw>
+<kw name="Fill Detail Account">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:34.424077" level="INFO">Clicking element '//*[@id="id_gender1"]'.</msg>
+<arg>//*[@id="id_gender1"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:34.424077" elapsed="0.260552"/>
+</kw>
+<kw name="Input Password" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:34.684629" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
+<msg time="2025-02-11T11:11:34.763673" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>//*[@id="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:34.684629" elapsed="0.247169"/>
+</kw>
+<kw name="Select From List By Value" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:34.931798" level="INFO">Selecting options from selection list '//*[@id="days"]' by value 11.</msg>
+<arg>//*[@id="days"]</arg>
+<arg>11</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-02-11T11:11:34.931798" elapsed="0.164263"/>
+</kw>
+<kw name="Select From List By Index" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:35.100352" level="INFO">Selecting options from selection list '//*[@id="months"]' by index 7.</msg>
+<arg>//*[@id="months"]</arg>
+<arg>7</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="PASS" start="2025-02-11T11:11:35.100352" elapsed="0.251126"/>
+</kw>
+<kw name="Select From List By Value" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:35.351478" level="INFO">Selecting options from selection list '//*[@id="years"]' by value 2004.</msg>
+<arg>//*[@id="years"]</arg>
+<arg>2004</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-02-11T11:11:35.351478" elapsed="0.146161"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="Selenium2Library">
+<arg>//*[@id="form"]/div/div/div/div[1]/form/div[6]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-11T11:11:35.497639" elapsed="0.054365"/>
+</kw>
+<kw name="Select Checkbox" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:35.552004" level="INFO">Selecting checkbox 'xpath=//*[@id='newsletter']'.</msg>
+<arg>xpath=//*[@id='newsletter']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:35.552004" elapsed="0.185106"/>
+</kw>
+<kw name="Select Checkbox" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:35.737110" level="INFO">Selecting checkbox 'xpath=//*[@id='optin']'.</msg>
+<arg>xpath=//*[@id='optin']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:35.737110" elapsed="0.185376"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:35.923548" level="INFO">Typing text 'Aphinan' into text field '//*[@id="first_name"]'.</msg>
+<arg>//*[@id="first_name"]</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:35.922486" elapsed="0.243296"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:36.165782" level="INFO">Typing text 'Janta' into text field '//*[@id="last_name"]'.</msg>
+<arg>//*[@id="last_name"]</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:36.165782" elapsed="0.212754"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:36.378536" level="INFO">Typing text '123 moodeng' into text field '//*[@id="address1"]'.</msg>
+<arg>//*[@id="address1"]</arg>
+<arg>${address}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:36.378536" elapsed="0.279512"/>
+</kw>
+<kw name="Select From List By Value" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:36.658048" level="INFO">Selecting options from selection list '//*[@id="country"]' by value United States.</msg>
+<arg>//*[@id="country"]</arg>
+<arg>United States</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2025-02-11T11:11:36.658048" elapsed="0.149821"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:36.807869" level="INFO">Typing text 'Chiang Mai' into text field '//*[@id="state"]'.</msg>
+<arg>//*[@id="state"]</arg>
+<arg>${state}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:36.807869" elapsed="0.300917"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:37.108786" level="INFO">Typing text 'Fang' into text field '//*[@id="city"]'.</msg>
+<arg>//*[@id="city"]</arg>
+<arg>${city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:37.108786" elapsed="0.200385"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:37.309171" level="INFO">Typing text '50110' into text field '//*[@id="zipcode"]'.</msg>
+<arg>//*[@id="zipcode"]</arg>
+<arg>${zipcode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:37.309171" elapsed="0.215690"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:37.524861" level="INFO">Typing text '00000000000' into text field '//*[@id="mobile_number"]'.</msg>
+<arg>//*[@id="mobile_number"]</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:37.524861" elapsed="0.283110"/>
+</kw>
+<arg>password=${password}</arg>
+<arg>firstname=${firstname}</arg>
+<arg>lastname=${lastname}</arg>
+<arg>address=${address}</arg>
+<arg>state=${state}</arg>
+<arg>city=${city}</arg>
+<arg>zipcode=${zipcode}</arg>
+<arg>phone=${phone}</arg>
+<status status="PASS" start="2025-02-11T11:11:34.418511" elapsed="3.389460"/>
+</kw>
+<kw name="Click CreateAccount Button">
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:37.807971" level="INFO">Clicking button '//*[@id="form"]/div/div/div/div[1]/form/button'.</msg>
+<arg>//*[@id="form"]/div/div/div/div[1]/form/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:37.807971" elapsed="1.496382"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:11:37.807971" elapsed="1.496382"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>Account Created!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-11T11:11:39.304353" elapsed="0.032036"/>
+</kw>
+<kw name="Click Continue Button">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:39.338033" level="INFO">Clicking element '//*[@id="form"]/div/div/div/div/a'.</msg>
+<arg>//*[@id="form"]/div/div/div/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-11T11:11:39.338033" elapsed="1.876994"/>
+</kw>
+<status status="PASS" start="2025-02-11T11:11:39.336389" elapsed="1.880220"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>Logged in as Aphinan</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-11T11:11:41.216609" elapsed="0.026623"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="Selenium2Library">
+<arg>Features Items</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-11T11:11:41.243232" elapsed="0.023885"/>
+</kw>
+<kw name="Execute Javascript" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:41.271866" level="INFO">Executing JavaScript:
+document.body.style.zoom="20%"
+Without any arguments.</msg>
+<arg>document.body.style.zoom="20%"</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2025-02-11T11:11:41.267117" elapsed="0.085644"/>
+</kw>
+<kw name="Add Products">
+<kw name="Wait Until Element Contains" owner="Selenium2Library">
+<msg time="2025-02-11T11:11:46.616988" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-02-11T11:11:46.618558" level="FAIL">Element with locator '/html/body/section[2]/div/div/div[2]/div[1]/div[2]/div/div[1]/div[1]/h2' not found.</msg>
+<arg>/html/body/section[2]/div/div/div[2]/div[1]/div[2]/div/div[1]/div[1]/h2</arg>
+<arg>text=</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="FAIL" start="2025-02-11T11:11:41.356228" elapsed="5.269071">Element with locator '/html/body/section[2]/div/div/div[2]/div[1]/div[2]/div/div[1]/div[1]/h2' not found.</status>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<arg>/html/body/section[2]/div/div/div[2]/div[1]/div[2]/div/div[2]/ul/li/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-11T11:11:46.625299" elapsed="0.001561"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<arg>/html/body/section/div/div/div[2]/div[2]/div[2]/div/span/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-11T11:11:46.626860" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<arg>//*[@id="cartModal"]/div/div/div[3]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-02-11T11:11:46.626860" elapsed="0.001531"/>
+</kw>
+<status status="FAIL" start="2025-02-11T11:11:41.356228" elapsed="5.272163">Element with locator '/html/body/section[2]/div/div/div[2]/div[1]/div[2]/div/div[1]/div[1]/h2' not found.</status>
+</kw>
+<kw name="Click Cart Product">
+<status status="NOT RUN" start="2025-02-11T11:11:46.628391" elapsed="0.001583"/>
+</kw>
+<kw name="Click Proceed To Checkout">
+<status status="NOT RUN" start="2025-02-11T11:11:46.629974" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-02-11T11:11:29.475783" elapsed="17.154191">Element with locator '/html/body/section[2]/div/div/div[2]/div[1]/div[2]/div/div[1]/div[1]/h2' not found.</status>
+</test>
+<status status="FAIL" start="2025-02-11T11:11:20.640137" elapsed="25.992925"/>
+</suite>
+<status status="FAIL" start="2025-02-11T11:11:20.634915" elapsed="26.001898"/>
+</suite>
+<status status="FAIL" start="2025-02-11T11:11:20.589870" elapsed="26.051427"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot framwork" id="s1" pass="0" fail="1" skip="0">Robot framwork</stat>
+<stat name="TestCases" id="s1-s1" pass="0" fail="1" skip="0">Robot framwork.TestCases</stat>
+<stat name="Lab01" id="s1-s1-s1" pass="0" fail="1" skip="0">Robot framwork.TestCases.Lab01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
